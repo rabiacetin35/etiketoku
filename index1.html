@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiket Okuyucu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Etiket Okuyucu</h1>
+    <p>Bir fotoğraf yükleyin ve etiketi okuyun.</p>
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="readButton">Etiketi Oku</button>
+    <p id="result">Sonuç burada görünecek</p>
+
+    <!-- Tesseract.js Kütüphanesi -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.1.4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .highlighted {
+            color: red;
+            font-weight: bold; /* İsterseniz yazıyı kalın yapabilirsiniz */
+        }
+    </style>
+    
+</body>
+</html>
